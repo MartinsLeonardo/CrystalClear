@@ -1,0 +1,28 @@
+.selecionado {
+    font-weight: bold;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+}
+
+.Clear{
+    background-color: azure;
+}
+
+.Yellow{
+    background-color: yellow;
+}
+
+.Orange{
+    background-color: orange;
+}
+
+.Red{
+    background-color: red;
+}
+
+.Maroon{
+    background-color: maroon;
+}
