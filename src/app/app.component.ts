@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { Crystal } from './crystal.model';
+import { Papel } from './papel.model';
+import { Ferramenta } from './ferramenta.model';
+import { Processo } from './processo.model';
+import { Documento } from './documento.model';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +11,8 @@ import { Crystal } from './crystal.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  ambiente = 'ambiente texto....';
 
   crystals = [
     new Crystal('Clear','L6','Life (L)'),
@@ -29,5 +35,26 @@ export class AppComponent {
     new Crystal('Maroon','E200','Essential Money (E)'),
     new Crystal('Maroon','D200','Discretionary Money (D)'),
     new Crystal('Maroon','C200','Comfort (C)')
-  ];
+  ]
+
+  papeis = [
+    new Papel('Papel 1','Desc'),
+    new Papel('Papel 2','Desc')
+  ]
+
+  documentos = [
+    new Documento('Documento 1','Desc'),
+    new Documento('Documento 2','Desc')
+  ]
+  
+  processos = [
+    new Processo('Processo 1','Desc'),
+    new Processo('Processo 2','Desc')
+  ]
+
+  ferramentas = [
+    new Ferramenta('Ferramenta 1','Desc'),
+    new Ferramenta('Ferramenta 2','Desc')
+  ]
+  ;
 }
