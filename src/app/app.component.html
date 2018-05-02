@@ -15,19 +15,15 @@
   </button>
 </div>
 
-<!-- Sessão Ambiente -->
-<h2>
-  Ambiente
-</h2>
-{{ambiente}}
-
 <!-- Sessão Processos -->
 <h2>
   Processos
 </h2>
 <div *ngFor="let processo of processos">
-  <p>
+  <h5>
     {{processo.type}}
+  </h5>
+  <p>
     {{processo.describe}}
   </p>
 </div>
