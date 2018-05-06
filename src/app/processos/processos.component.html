@@ -1,0 +1,10 @@
+<!-- Sessão Processos -->
+<h2>
+  Processos
+</h2>
+<div *ngFor="let processo of processos" (click)="selecionar(processo)">
+  <h3>
+    {{processo.type}}
+  </h3>
+  <p *ngIf="selecionado == processo">{{processo.describe}}</p>
+</div>

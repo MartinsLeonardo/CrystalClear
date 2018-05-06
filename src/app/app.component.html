@@ -1,3 +1,5 @@
+
+<router-outlet></router-outlet>
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
@@ -15,39 +17,6 @@
   </button>
 </div>
 
-<!-- Sessão Processos -->
-<h2>
-  Processos
-</h2>
-<div *ngFor="let processo of processos" (click)="selecionar(processo)">
-  <h3>
-    {{processo.type}}
-  </h3>
-  <p *ngIf="selecionado == processo">{{processo.describe}}</p>
-</div>
-
-<!-- Sessão Papéis -->
-<h2>
-  Papéis
-</h2>
-<div *ngFor="let papel of papeis">
-  <p>
-    {{papel.type}}
-    {{papel.describe}}
-  </p>
-</div>
-
-<!-- Sessão Ferramentas -->
-<h2>
-  Ferramentas
-</h2>
-<div *ngFor="let ferramenta of ferramentas">
-  <p>
-    {{ferramenta.type}}
-    {{ferramenta.describe}}
-  </p>
-</div>
-
 <!-- Sessão Documentações -->
 <h2>
   Documentações
@@ -58,5 +27,3 @@
     {{documento.describe}}
   </p>
 </div>
-
-<i class="fas fa-user"></i>
