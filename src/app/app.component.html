@@ -19,13 +19,11 @@
 <h2>
   Processos
 </h2>
-<div *ngFor="let processo of processos">
-  <h5>
+<div *ngFor="let processo of processos" (click)="selecionar(processo)">
+  <h3>
     {{processo.type}}
-  </h5>
-  <p>
-    {{processo.describe}}
-  </p>
+  </h3>
+  <p *ngIf="selecionado == processo">{{processo.describe}}</p>
 </div>
 
 <!-- Sessão Papéis -->

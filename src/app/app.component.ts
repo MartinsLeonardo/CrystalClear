@@ -11,6 +11,7 @@ import { Documento } from './documento.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selecionado = null;
   crystals = [
     new Crystal('Clear','L6','Life (L)'),
     new Crystal('Clear','E6','Essential Money (E)'),
@@ -70,4 +71,8 @@ export class AppComponent {
     new Ferramenta('Ferramenta 2','Desc', 'color')
   ]
   ;
+
+  selecionar(selecionado) {
+    this.selecionado = selecionado;
+  }
 }
