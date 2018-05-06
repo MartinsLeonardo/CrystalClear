@@ -1,15 +1,9 @@
 
 <router-outlet></router-outlet>
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Família Crystal
-  </h1>
-</div>
 
 <!-- Sessão Família Crystal -->
 <h2>
-  Família
+  Família Crystal
 </h2>
 <div *ngFor="let crystal of crystals">
   <button>
@@ -17,13 +11,3 @@
   </button>
 </div>
 
-<!-- Sessão Documentações -->
-<h2>
-  Documentações
-</h2>
-<div *ngFor="let documento of documentos">
-  <p>
-    {{documento.type}}
-    {{documento.describe}}
-  </p>
-</div>

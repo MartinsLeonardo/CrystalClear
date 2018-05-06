@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Crystal } from './crystal.model';
-import { Documento } from './documento.model';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,6 @@ import { Documento } from './documento.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
   
   crystals = [
     new Crystal('Clear','L6','Life (L)'),
@@ -32,12 +30,4 @@ export class AppComponent {
     new Crystal('Maroon','D200','Discretionary Money (D)'),
     new Crystal('Maroon','C200','Comfort (C)')
   ]
-
-  documentos = [
-    new Documento('Documento 1','Desc'),
-    new Documento('Documento 2','Desc')
-  ]
-  ;
-
-  
 }

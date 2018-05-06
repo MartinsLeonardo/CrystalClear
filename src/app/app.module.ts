@@ -7,8 +7,12 @@ import { AppComponent } from './app.component';
 import { FerramentasComponent } from './ferramentas/ferramentas.component';
 import { ProcessosComponent } from './processos/processos.component';
 import { PapeisComponent } from './papeis/papeis.component';
+import { DocumentosComponent } from './documentos/documentos.component';
+import { FamiliaComponent } from './familia/familia.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
+  {path:'documentacoes',component: DocumentosComponent},
   {path:'papeis',component: PapeisComponent},
   {path:'processos',component: ProcessosComponent},
   {path:'ferramentas', component: FerramentasComponent},
@@ -20,7 +24,10 @@ const appRoutes: Routes = [
     AppComponent,
     FerramentasComponent,
     ProcessosComponent,
-    PapeisComponent
+    PapeisComponent,
+    DocumentosComponent,
+    FamiliaComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(
