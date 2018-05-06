@@ -16,7 +16,8 @@ const appRoutes: Routes = [
   {path:'papeis',component: PapeisComponent},
   {path:'processos',component: ProcessosComponent},
   {path:'ferramentas', component: FerramentasComponent},
-  {path:'', component: AppComponent,}
+  {path:'', component: HomeComponent},
+  {path:'**',component: HomeComponent}
 ];
 
 @NgModule({
