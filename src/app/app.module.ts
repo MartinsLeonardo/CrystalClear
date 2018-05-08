@@ -12,6 +12,7 @@ import { FamiliaComponent } from './familia/familia.component';
 import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
+  {path:'familia',component:FamiliaComponent},
   {path:'documentacoes',component: DocumentosComponent},
   {path:'papeis',component: PapeisComponent},
   {path:'processos',component: ProcessosComponent},
