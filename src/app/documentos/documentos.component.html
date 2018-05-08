@@ -1,10 +1,18 @@
 <!-- Sessão Documentações -->
-<h2>
-  Documentações
-</h2>
+<div class="jumbotron">
+    <h1 class="display-4">Documentações</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+</div>
+
 <div *ngFor="let documento of documentos">
-  <p>
-    {{documento.type}}
-    {{documento.describe}}
-  </p>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/documentacoes" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{documento.type}}</h5>
+          <p class="card-text">{{documento.describe}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
 </div>
