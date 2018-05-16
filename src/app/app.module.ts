@@ -10,8 +10,10 @@ import { PapeisComponent } from './papeis/papeis.component';
 import { DocumentosComponent } from './documentos/documentos.component';
 import { FamiliaComponent } from './familia/familia.component';
 import { HomeComponent } from './home/home.component';
+import { EstrategiasComponent } from './estrategias/estrategias.component';
 
 const appRoutes: Routes = [
+  {path:'estrategias',component: EstrategiasComponent},
   {path:'familia',component:FamiliaComponent},
   {path:'documentacoes',component: DocumentosComponent},
   {path:'papeis',component: PapeisComponent},
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     PapeisComponent,
     DocumentosComponent,
     FamiliaComponent,
-    HomeComponent
+    HomeComponent,
+    EstrategiasComponent
   ],
   imports: [
     RouterModule.forRoot(
