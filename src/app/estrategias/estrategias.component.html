@@ -7,11 +7,11 @@
 </div>
 
 <div *ngFor="let estrategia of estrategias">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="/estrategia" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{estrategia.type}}</h5>
-      <p>{{estrategia.describe}}</p>
-    </div>
-</div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="estrategia.img" alt="Card image cap" style="width: 50%">
+      <div class="card-body">
+        <h5 class="card-title">{{estrategia.type}}</h5>
+        <p>{{estrategia.describe}}</p>
+      </div>
+  </div>
 </div>
