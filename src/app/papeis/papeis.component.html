@@ -8,7 +8,7 @@
 
 <div *ngFor="let papel of papeis">
     <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src='' alt="Card image cap">
+        <img class="card-img-top" [src]="papel.img" alt="Card image cap" style="width: 50%">
         <div class="card-body">
           <h5 class="card-title">{{papel.type}}</h5>
           <p class="card-text">{{papel.describe}}</p>
