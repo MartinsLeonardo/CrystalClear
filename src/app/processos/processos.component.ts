@@ -9,7 +9,6 @@ import { Processo } from './processo.model';
 export class ProcessosComponent implements OnInit {
   selecionado = null;
   processos = [
-    new Processo('Observações','Para que o projeto seja adequado a esta metodologia é necessário que haja uma ou mais entregas. Se for constatado que em apenas uma entrega é possível realizar o projeto, este projeto não é grande o suficiente para a aplicação dos conceitos do Crystal Clear.', 'red'),
     new Processo('Ciclo do Projeto','Se inicia na fase de Staging, passa pelas fases de contratação, ensino da metodologia, ciclo de entrega, finalizando em um workshop. Todo o ciclo do projeto deve ser monitorado para acompanhamento da sua evolução.','red'),
     new Processo('Staging','Na metodologia Clear da família cristal é adotada a técnica "Exploratório de 360 Graus" para a realização dessa fase','red'),
     new Processo('Contratação','Na fase de contratação é realizada a contratação da equipe, e o ensino da metodologia aos contratados. Os papéis adotados são: \n _Executive Sponsor (Obrigatório) \n _Lead Designer (Obrigatório) _Business Expert & Embassador User (Usuário Embaixador) _Expert Developer Coordinator (Cordenador) _Designer-Programmer _Tester _Writer _OBS: A quantidade de colaboradores de pouca ou sem experiência deve ser menor do que a de colaboradores experientes.', 'red'),

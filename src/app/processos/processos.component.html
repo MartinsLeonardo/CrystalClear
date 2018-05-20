@@ -4,12 +4,13 @@
     <h1 class="display-4">Processos</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p>Para que o projeto seja adequado a esta metodologia é necessário que haja uma ou mais entregas.
+    Se for constatado que em apenas uma entrega é possível realizar o projeto, este projeto não é grande o suficiente para a aplicação dos conceitos do Crystal Clear.</p>
 </div>
 
 <div *ngFor="let processo of processos">
     <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="/documentacoes" alt="Card image cap">
+        <img class="card-img-top" [src]="processo.img" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{processo.type}}</h5>
           <p class="card-text">{{processo.describe}}</p>
