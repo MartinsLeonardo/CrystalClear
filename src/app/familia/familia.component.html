@@ -8,7 +8,7 @@
   
 <div *ngFor="let crystal of crystals">
   <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="/documentacoes" alt="Card image cap">
+    <img class="card-img-top" [src]="crystal.img" alt="Card image cap" style="width:50%">
       <div class="card-body">
         <h5 class="card-title">{{crystal.name}}</h5>
         <p>{{crystal.describe}}</p>
