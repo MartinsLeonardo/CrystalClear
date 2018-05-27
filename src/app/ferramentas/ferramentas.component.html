@@ -7,11 +7,14 @@
 </div>
   
 <div *ngFor="let ferramenta of ferramentas">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" [src]="ferramenta.img" alt="Card image cap" style="width: 50%">
-      <div class="card-body">
-        <h5 class="card-title">{{ferramenta.type}}</h5>
-        <p>{{ferramenta.describe}}</p>
-      </div>
-  </div>
+    <div class="container">
+            <div class="media">
+                <img class="mr-3" [src]="ferramenta.img" alt="Generic placeholder image">
+                <div class="media-body">
+                    <h5 class="mt-0">{{ferramenta.type}}</h5>
+                    <p>{{ferramenta.describe}}</p>
+                </div>
+            </div>
+        </div>
+    <br/><br/><br/>
 </div>

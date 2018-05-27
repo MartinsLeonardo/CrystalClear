@@ -13,11 +13,14 @@
 </div>
 
 <div *ngFor="let processo of processos">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" [src]="processo.img" alt="Card image cap" style="width:50%">
-        <div class="card-body">
-          <h5 class="card-title">{{processo.type}}</h5>
-          <p class="card-text">{{processo.describe}}</p>
+    <div class="container">
+            <div class="media">
+                <img class="mr-3" [src]="processo.img" alt="Generic placeholder image">
+                <div class="media-body">
+                    <h5 class="mt-0">{{processo.type}}</h5>
+                    <p>{{processo.describe}}</p>
+                </div>
+            </div>
         </div>
-    </div>
+    <br/><br/><br/>
 </div>

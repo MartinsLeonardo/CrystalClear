@@ -5,13 +5,21 @@
     <hr class="my-4">
     <p>Projetos com risco de vida são tarjados com a inicial L, com riscos quanto aos recursos são tarjados com as letras E ou D, e projetos com baixo risco são tarjados de letra C.</p>
 </div>
-  
+
+<div>
+  Imagem Crystal Family Centralizada
+</div>
+
 <div *ngFor="let crystal of crystals">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" [src]="crystal.img" alt="Card image cap" style="width:50%">
-      <div class="card-body">
-        <h5 class="card-title">{{crystal.name}}</h5>
-        <p>{{crystal.describe}}</p>
-      </div>
-  </div>
+    <div class="container">
+            <div class="media">
+                <img class="mr-3" [src]="crystal.img" alt="Generic placeholder image">
+                <div class="media-body">
+                    <h5 class="mt-0">{{crystal.type}}</h5>
+                    <h4>{{crystal.name}}</h4>
+                    <p>{{crystal.describe}}</p>
+                </div>
+            </div>
+        </div>
+    <br/><br/><br/>
 </div>
