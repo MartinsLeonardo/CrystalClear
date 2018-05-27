@@ -1,9 +1,7 @@
 <!-- Sessão Papéis -->
 <div class="jumbotron">
     <h1 class="display-4">Papéis</h1>
-    <p class="lead">Explicar papéis obrigatórios e papéis rotativos e etc</p>
-    <hr class="my-4">
-    <p>Time como um todo deve realizar os workshops e reflexões.</p>
+    <p class="lead">Papéis são descrições de funções que compõem uma metodologia em engenharia de software.</p>
 </div>
 
 <div *ngFor="let papel of papeis">
@@ -11,7 +9,8 @@
             <div class="media">
                 <img class="mr-3" [src]="papel.img" alt="Generic placeholder image">
                 <div class="media-body">
-                    <h5 class="mt-0">{{papel.type}}</h5>
+                    <h4 class="mt-0">{{papel.type}}</h4>
+                    <h5>{{papel.name}}</h5>
                     <p>{{papel.describe}}</p>
                 </div>
             </div>
