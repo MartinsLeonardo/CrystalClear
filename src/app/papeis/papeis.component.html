@@ -1,0 +1,19 @@
+<!-- Sessão Papéis -->
+<div class="jumbotron">
+    <h1 class="display-4">Papéis</h1>
+    <p class="lead">Papéis são descrições de funções que compõem uma metodologia em engenharia de software.</p>
+</div>
+
+<div *ngFor="let papel of papeis">
+    <div class="container">
+            <div class="media">
+                <img class="mr-3" [src]="papel.img" alt="Generic placeholder image">
+                <div class="media-body">
+                    <h4 class="mt-0">{{papel.type}}</h4>
+                    <h5>{{papel.name}}</h5>
+                    <p>{{papel.describe}}</p>
+                </div>
+            </div>
+        </div>
+    <br/><br/><br/>
+</div>
