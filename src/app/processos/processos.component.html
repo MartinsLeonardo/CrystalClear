@@ -2,16 +2,43 @@
 
 <div class="jumbotron">
     <h1 class="display-4">Processos</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p class="lead">Processo é uma sequência contínua de fatos ou operações que apresentam certa unidade ou que se reproduzem com certa regularidade</p>
     <hr class="my-4">
     <p>Para que o projeto seja adequado a esta metodologia é necessário que haja uma ou mais entregas.
     Se for constatado que em apenas uma entrega é possível realizar o projeto, este projeto não é grande o suficiente para a aplicação dos conceitos do Crystal Clear.</p>
 </div>
 
+<!-- Ciclo -->
 <div>
-    <!--Imagem do Ciclo de vida com numerações-->
+    <div class="container">
+        <h2>Ciclo Crystal Clear</h2>
+    </div>
+</div>
+<br/><br/>
+<div *ngFor="let ciclo of ciclos">
+    <div class="container">
+            <div class="media">
+                <img class="mr-3" [src]="ciclo.img" alt="Generic placeholder image">
+                <div class="media-body">
+                    <h5 class="mt-0">{{ciclo.type}}</h5>
+                    <p>{{ciclo.describe}}</p>
+                </div>
+            </div>
+        </div>
+    <br/><br/><br/>
 </div>
 
+<!-- Processo -->
+<div>
+    <div class="container">
+        <h2>Processos Crystal Clear</h2>
+        <p>O ciclo de vida na metodologia Crystal Clear apresenta particularidades, como a adição da fase de contratação de colaboradores e principalmente um ambiente de fácil comunicação.</p>
+        <div class="row justify-content-md-center">
+            <img class="mr-3" src="../../assets/img/processos/cicloclear.png" alt="Generic placeholder image" style="width:40%; height: 40%">
+        </div>
+    </div>
+</div>
+<br/><br/>
 <div *ngFor="let processo of processos">
     <div class="container">
             <div class="media">
